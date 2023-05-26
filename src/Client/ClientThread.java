@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class ClientThread extends Thread {
-    private final Socket clientSocket;
     private static final String EXIT_MESSAGE = "exit";
+    private final Socket clientSocket;
 
     public ClientThread(Socket clientSocket) {
         this.clientSocket = clientSocket;
